@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.al-mid{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*intro-box start*/
+.intro-box{
+	display: flex;
+	background-image: url("IMG/greenpc.jpg");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.name{
+	justify-content: center;
+	align-content: center;
+}
+
+.intro-desc{
+	justify-content: center;
+	align-content: center;
+}
+/*intro-box-end*/
