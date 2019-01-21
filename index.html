@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<meta charset = "UTF-8"/>
+
 <html>
 <head>
+	<meta charset = "UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Allen P Biju | Web Portfolio</title>
 	<link rel = "stylesheet" type = "text/css" href = "style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#m-button").click(function(){
+    $("#main-content").slideDown();
+  });
+});
+</script>
 </head>
 <body>
 	<!--intro-box start-->
 	<div class = "intro-box">
-		<h1 class = "name"> Love . Code . Travel .</h1>
-		<p class = "intro-desc">I'm an Indian Web Developer. Loves to create responsive and user friendly websites.</p>
+		<div class = "head-bg"></div>
+		<div class = "head-content">
+			<p class = "name">Allen P Biju</p>
+			<h1 class = "main-title al-mid"> Love . Learn . Code</h1>
+			<button class="al-mid m-button" onclick="myFunction()" id = "m-button">more about me</button>
+		</div>
 	</div>
 	<!--intro-box-end-->
+	<div id = "main-content">dfewhkrg</div>
 </body>
 </html>

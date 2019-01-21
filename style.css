@@ -11,20 +11,58 @@ body{
 
 /*intro-box start*/
 .intro-box{
-	display: flex;
-	background-image: url("IMG/greenpc.jpg");
 	width: 100%;
-	background-repeat: no-repeat;
+	height: 200px;
+	position: relative;
+}
+
+.head-content{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 200px;
+	left: 0;
+  	right: 0;
+  	z-index: 2;
+}
+
+.head-bg{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background-image: url("IMG/greenpc.jpg");
 	background-size: cover;
+	background-position: center;
+	left: 0;
+  	right: 0;
+  	z-index: 1;
+  	filter:opacity(.7);
+}
+
+
+.main-title{
+	text-align: center;
+	color: #ffffff;
+	font-size: 40px;
+	width: 100%;
 }
 
 .name{
-	justify-content: center;
-	align-content: center;
+	color: #ffffff;
+	width: 100%;
+	align-content: top;
+	justify-content: top;
+	margin: 0px;
 }
 
-.intro-desc{
-	justify-content: center;
-	align-content: center;
+
+
+#main-content {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
 }
 /*intro-box-end*/
