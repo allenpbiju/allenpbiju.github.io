@@ -1,31 +1,51 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <html>
 <head>
 	<meta charset = "UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Allen P Biju | Web Portfolio</title>
+	<!--css-->
 	<link rel = "stylesheet" type = "text/css" href = "style.css"/>
+	<!--google-web-fonts-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Ropa+Sans|Staatliches" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<!-- jQuery library -->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#m-button").click(function(){
-    $("#main-content").slideDown();
-  });
-});
-</script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#m-button").click(function(){
+		    $("#main-content").slideDown();
+		    $("#m-button").hide();
+		  });
+		});
+	</script>
 </head>
 <body>
 	<!--intro-box start-->
 	<div class = "intro-box">
 		<div class = "head-bg"></div>
 		<div class = "head-content">
-			<p class = "name">Allen P Biju</p>
+			<span class = "name">Allen P Biju</span>
 			<h1 class = "main-title al-mid"> Love . Learn . Code</h1>
-			<button class="al-mid m-button" onclick="myFunction()" id = "m-button">more about me</button>
+			<button class="al-mid" id = "m-button">about me<br/><i class="material-icons md-15">
+keyboard_arrow_down
+</i></button>
 		</div>
 	</div>
 	<!--intro-box-end-->
-	<div id = "main-content">dfewhkrg</div>
+	<!--about-content-start-->
+	<div class="container-fluid" id = "main-content">
+  		<div class="row">
+    		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 img-div"><img class = "al-mid" src = "IMG/pic.jpeg" /></div>
+    		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 bio-div"><p>I'm a student currently pursuing my Btech Degree in Computer Science. Currently exploring the field of web development to create awesome websites. Cherishing my entrepreneurial dreams through Teqnocart innovations. Check out our website <a href = "http://www.teqnocart.com/" >here</a>. Mobile App Development and Machine Learning are the things I would like to explore further. Likes to travel new places and read. </p></div>
+  		</div>
+	</div>
+	<!--about-content-end-->
 </body>
 </html>
